@@ -1,4 +1,4 @@
-package Twarita.Selenium;
+package seleniumStepBystep;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

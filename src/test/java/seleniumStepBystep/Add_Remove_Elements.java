@@ -1,4 +1,4 @@
-package Twarita.Selenium;
+package seleniumStepBystep;
 
 import java.util.List;
 
