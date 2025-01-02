@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Example_1 {
+public class Intro {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub

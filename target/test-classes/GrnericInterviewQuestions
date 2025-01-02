@@ -1,0 +1,119 @@
+#Which of the following command is used to get all the links present on the page?
+	List allLinks = d.findElements(By.xpath("//a"));
+	
+#Which of the following method in selenium is used to terminate the browser or window/tab which is currently having the focus?
+	close();
+	
+#When does WebDriver throw ElementNotVisibleException exception?
+	When webdriver couldn't find any element
+	
+#Consider that you want to double click on element or use any key from keyboard using webdriver,Which class will you to use to perform the above operation in selenium?
+	Action class
+	
+#Which one is not correct type of locator?
+	DOM
+	
+#What will be returned for an Element not found by findElements method in selenium?
+	Returns empty list
+	
+#How to refresh page without using context click?
+	driver.findElement(By.id("xyz")).sendKeys(Keys.F5);
+	driver.navigate().refresh();
+	driver.navigate().to(driver.getCurrentUrl());
+	
+#Where in a constructor, can you place a call to constructor defined in the super class?
+	The first statement in the constructor
+	
+#Which of the following will close current browser window?
+	driver.close();
+	
+#Which is the most efficient way of identifying an element in selenium?
+	ID
+	
+#Implicit wait time is applied to all elements in your script and Explicit wait time is applied only for particular specified element.
+	True
+	
+#The following codes both print: Welcome to QAClick 
+System.out.println(driver.getTitle()); 
+System.out.println(driver.findElement(By.tagName("title")).getText())
+	true
+	
+#Which WebDriver method is used to change focus to an alert, a frame or a browser window?
+	switchTo();
+
+#Consider the following HTML code snippet
+1	2
+3	4
+driver.findElement(By.xpath("//table/tr[1]/td")).getText();
+	1
+	
+#In webdriver, selectAllOptions() is a valid command.
+	False
+	
+#Consider the following html snippet
+Firefox
+Google Chrome
+Internet Explorer
+Opera
+Safari
+Which CSS selector is a valid statement to select Opera?
+	css=ul>li:nth-of-type(4)
+	
+#Consider the following code snippet WebDriverWait wait = new WebDriverWait(driver, 30); wait.until(ExpectedConditions.presenceOfElementLocated(by)); 
+This is an example of an implicit wait.
+	False
+	
+#In webdriver, which command takes you forward by one page on the browser’s history?
+	navigate().forward();
+	
+#What is the output of the following statement?
+Name 1 Name 2
+driver.findElement(By.cssSelector("#name"));
+	Name 1
+	
+#In webdriver, which method closes the open browser?
+	close();
+	
+#In webdriver, deselectAll() is a valid command
+	True
+	
+#Selenium IDE is supported by which browser?
+	Firefox
+	Chrome
+	
+#In webdriver, which of the following commands retrieves the text of a html element?
+	getText();
+	
+#In WebDriver, which command can be used to enter values onto text boxes? Select the best answer
+	sendKeys("text");
+	
+#In webdriver, which methods navigates to a URL?
+	get("url");
+	
+#In webdriver, what is the method that counts the number of elements?
+	driver.findElements(By.id("search")).size();
+	
+#In webdriver, which of the following is a valid select statement that selects a value from a drop down element?
+	selectbyIndex();
+	selectByVisibleText();
+	selectByValue();
+	
+#Selenium IDE stands for
+	Selenium Integrated Development Environment
+	
+#The Selenium can
+	only test web applications
+	
+#Select the Get command which fetches the inner text of the element that you specify in Web driver Selenium.
+	getText();
+	
+#Which method is used when you want to verify whether a certain check box, radio button, or option in a drop-down box is selected in Web driver Selenium
+	isSelected();
+	
+#Which Component is used to run multiple tests simultaneously in different browsers and platforms?
+	Selenium Grid
+	
+#On which category below xpath belongs to? /html/body/input
+	Absolute xpath
+
+	
