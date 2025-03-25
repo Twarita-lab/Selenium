@@ -27,6 +27,8 @@ public class FramesExample {
 		//Switch to Frame
 		driver.switchTo().frame(driver.findElement(By.cssSelector(".demo-frame")));
 		
+		
+		
 		WebElement sourceElement = driver.findElement(By.cssSelector("div#draggable"));
 		WebElement targetElement = driver.findElement(By.cssSelector("div#droppable"));
 		action.dragAndDrop(sourceElement, targetElement).build().perform();

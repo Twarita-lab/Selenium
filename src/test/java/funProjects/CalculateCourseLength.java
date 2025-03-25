@@ -10,13 +10,15 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class CalculateCourseLength {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		ChromeOptions options = new ChromeOptions();
 		//options.setExperimentalOption("debuggerAddress", "127.0.0.1:9222");
 		WebDriver driver = new ChromeDriver(options);
 		
-		driver.get("https://courses.rahulshettyacademy.com/courses/enrolled/1561306");
+		driver.get("https://courses.rahulshettyacademy.com/courses/enrolled/489581");
+		
+		Thread.sleep(5000);
 
 		List<WebElement> chapterLists = driver.findElements(By.xpath("//a[@class='item']"));
 		int totalMinTime=0;
@@ -24,12 +26,16 @@ public class CalculateCourseLength {
 		
 		for(WebElement chapter : chapterLists) {
 			String chapterName =  chapter.getAttribute("textContent");
+			if(chapterName.contains("(")) {
 			String chapterNameTimeStart=chapterName.split("\\(")[1];
+			if(Character.isDigit(chapterNameTimeStart.charAt(0))){
 			String[] chapterTimeLength = chapterNameTimeStart.split(":");
 			int chapterMinLength = Integer.parseInt(chapterTimeLength[0]);
 			int chapterSecLength = Integer.parseInt(chapterTimeLength[1].split("[ )]")[0]);
 			totalMinTime=totalMinTime+chapterMinLength;
 			totalSecTime=totalSecTime+chapterSecLength;
+			}
+			}
 					
 		}
 		int totalHrTime = (totalMinTime/60);

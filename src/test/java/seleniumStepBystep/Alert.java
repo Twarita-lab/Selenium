@@ -22,6 +22,7 @@ public class Alert {
 		
 		//Click on button to get Alert 1
 		driver.findElement(By.cssSelector("input#alertbtn")).click();
+		
 		 org.openqa.selenium.Alert Alert1 = driver.switchTo().alert();
 		//Grab text of the alert
 		 System.out.println(Alert1.getText().contains(text));

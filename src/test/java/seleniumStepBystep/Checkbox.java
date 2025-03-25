@@ -15,7 +15,7 @@ public class Checkbox {
 				friendsandfamilyCheckBox.click();
 				System.out.println(friendsandfamilyCheckBox.isSelected());
 				
-				driver.quit();
+				//driver.quit();
 		
 	}
 }

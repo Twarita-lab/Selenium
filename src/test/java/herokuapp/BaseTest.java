@@ -1,5 +1,6 @@
 package herokuapp;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -14,8 +15,17 @@ public class BaseTest {
 	public WebDriver launchHerokuApp() {
 		driver = new ChromeDriver();
 		driver.get("https://the-internet.herokuapp.com/");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 		return driver;
 		
+
+	}
+	
+	public List<WebElement> getLinkElement(WebDriver driver) {
+		List<WebElement> linkElements = driver.findElements(By.cssSelector("div#content li a"));
+		
+		return linkElements;
 
 	}
 	
